@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
 	// inisiasi variable map
@@ -22,6 +24,9 @@ func main() {
 	// fmt.Println("januari ", chicken["januari"])
 	// fmt.Println("januari ", chicken["januari"])
 
+	// menghapus data key pada variable map
+	delete(chicken, "januari")
+
 	// menampilkan data dengan looping
 	for key, val := range chicken {
 		fmt.Println(key, " \t:", val)
@@ -31,5 +36,25 @@ func main() {
 	}
 	for key, val := range cat {
 		fmt.Println(key, " \t:", val)
+	}
+
+	// mengecek apakah key itu ada pada map atau tidak
+	var result, isExist = dog["tinggi"]
+	if isExist {
+		fmt.Println("tinggi exist: ", result)
+	} else {
+		fmt.Println("tinggi not exist")
+	}
+
+	// kombinasi slice dan map
+	var fishs = []map[string]string{ //disini terlihat penggunaan [] yang menandakan kita membuat variable slice
+		map[string]string{"name": "ikan 1", "gender": "male"},
+		map[string]string{"name": "ikan 2", "gender": "female"},
+		map[string]string{"name": "ikan 3", "gender": "male"},
+	}
+
+	// looping lagi
+	for _, fish := range fishs {
+		fmt.Println(fish["gender"], fish["name"])
 	}
 }
