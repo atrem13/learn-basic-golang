@@ -3,6 +3,7 @@ package main
 import "fmt"
 
 func main() {
+	// merupakan metode dimana kita bisa mengakses memori tempat variable disimpan
 	var number = 4
 	fmt.Println("before :", number) // 4
 

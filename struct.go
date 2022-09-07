@@ -3,6 +3,7 @@ package main
 import "fmt"
 
 func main() {
+	// memberikan semacam struktur terhadap kelas (mirip OOP)
 	type student struct {
 		name  string
 		grade int
