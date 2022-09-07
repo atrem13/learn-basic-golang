@@ -26,6 +26,7 @@ func printMessage(message string, arr []string) {
 }
 
 // fungsi untuk menghitung diameter
+// fungsi ini juga mereturn 2 variable
 func calculate(d float64) (float64, float64) {
 	var luas = math.Pi * math.Pow(d/2, 2)
 	var keliling = math.Pi * d
