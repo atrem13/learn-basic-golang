@@ -3,6 +3,7 @@ package main
 import "fmt"
 
 func main() {
+	// merupakan fungsi yang memiliki jumlah parameter tidak terbatas
 	var avg = calculate(5, 5, 5, 5, 5, 5, 5, 5)
 	var msg = fmt.Sprintf("rata rata: %.2f", avg)
 	fmt.Println(msg)
