@@ -46,6 +46,8 @@ func main() {
 	var bangunDatar hitung // implementasi penggunaan interface
 	bangunDatar = persegi{5}
 	fmt.Println("Persegi")
+	//fungsi yang bisa diambil harus di decalre pada interface
+	// semua anak yang mewarisi interface harus memiliki fungsi yang di declare pada interface
 	fmt.Println("Luas: ", bangunDatar.luas())
 	fmt.Println("Keliling: ", bangunDatar.keliling())
 
